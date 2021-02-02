@@ -1,0 +1,23 @@
+//All subscriber requests 
+GET http://localhost:3000/subscribers
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{ "name": "Morgan", "subscribedToChannel": "Puss' Channel" }
+
+
+//Single subscriber requests
+###
+GET http://localhost:3000/subscribers/601844e07b5079be58ca4dbc
+
+###
+PATCH http://localhost:3000/subscribers/601844e07b5079be58ca4dbc
+Content-Type: application/json
+
+{ "name": "Morgan Samsonite", "subscribedToChannel": "Big Puss' Channel" }
+
+###
+DELETE http://localhost:3000/subscribers/601844e07b5079be58ca4dbc
+
